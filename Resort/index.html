@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<title>Carolina's Paradise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+  .jumbotron {
+      
+      background-size: cover;
+      height: 100%;
+      color: #303030;
+      padding: 100px 25px;
+      font-family: cursive;
+      background-color:rgb(234, 239, 241);
+    }
+    mark {
+  background-color: #2196F3;
+  color: black;
+}
+
+
+    .carousel-control.left {
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0,0) 0,rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 100%);
+    }
+    .carousel-control.right {
+    background-image: -webkit-linear-gradient(right,rgba(0, 0, 0,0) 0,rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(right,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 100%);
+    }
+    .modal-header,h4, .close {
+    background-color: #2196F3;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;  
+}
+  
+
+
+    .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+  .blur {filter: blur(4px);}
+.brightness {filter: brightness(250%);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+
+   
+  </style>
+<body id="#">
+
+
+  
+  <div class="w3-top">
+  <div class="w3-bar w3-large w3-light-grey">
+    <div class="w3-dropdown-click">
+      <button class="w3-button" onclick="myFunction()">
+        More <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="demo" class="w3-dropdown-content w3-bar-block w3-card ">
+        <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+        <a href="pools.html" class="w3-bar-item w3-button">Pools</a>
+        <a href="cottages.html" class="w3-bar-item w3-button">Cottages</a>
+        <a href="food&drinks.html" class="w3-bar-item w3-button">Food & Drinks</a>
+        <a href="pricing.html" class="w3-bar-item w3-button">Pricing</a>
+        <a href="about.html" class="w3-bar-item w3-button">About</a>
+        <a href="contact.php" class="w3-bar-item w3-button">Contact</a>
+      </div>
+    </div>
+    <a href="index.html" class="w3-bar-item w3-button w3-round w3-blue">Home</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-round">Gallery</a>
+    <a href="about.html" class="w3-hide-small w3-bar-item w3-button w3-round">about</a>
+    <a href="contact.php" class="w3-bar-item w3-button w3-round">Contact</a>
+  </div>
+  </div>
+
+  <div class="slideshow-container-fluid">
+
+    <div class="mySlides ">
+     
+      <img class="contrast" src="images/s1.jpg" style="width:100%" >
+      
+    </div>
+    
+    <div class="mySlides ">
+      
+      <img class="contrast" src="images/g10.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides ">
+      
+      <img class="contrast" src="images/s3.jpg" style="width:100%">
+      
+    </div>
+    
+</div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+    <br>
+
+    <div class="jumbotron text-center">
+  <h1 style="font-family:cursive;color:rgb(68, 20, 145);" class="glow">Carolina's Paradise</h1> 
+</div>
+
+
+<div class="container-fluid">
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Mission</a></li>
+    <li><a data-toggle="pill" href="#menu1">Vision</a></li>
+  </ul>
+  <div class="tab-content container-fluid">
+    <div id="home" class="tab-pane fade in active">
+      <div id="about" class="container-fluid bg-grey">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/v1.jpg" class="img-responsive" alt="waterstation" width="400" height="300">
+          </div>
+          <div class="col-sm-8">
+            <h2>Our Mission</h2><br>
+            <p style="text-align:justify; font-size:20px;"><strong>MISSION:</strong>Our Mission is to provide fun and enjoyment to everyone by providing our good services and uplifting everyone through our inner hospitality giving you our genuine services to make each one of you feel comfortable and easy in your sense of being.</p>
+           
+          </div> 
+        </div>
+        </div>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <div id="about" class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="images/v2.jpg" class="img-responsive" alt="waterstation" width="400" height="300">
+          </div>
+        <div class="col-sm-8">
+          <h2>Our Vission</h2><br>
+          <p style="text-align:justify; font-size:20px;"><strong>VISION:</strong>Our Vision is to cupture your rear moments with your families,friends and colleague.We wanna give you the best services and amenities for your own comfort and just enjoy on that rear moment of your busy life and just have fun and enjoy and we will always here to ensure that all is well for the benefits of each of our selves.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<hr>
+<br><br>
+
+
+<div class="container-fluid">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div id="Gallery" class="container-fluid text-center bg-grey">
+        <h1 style="background-color:#2196F3; color:white;">Polls</h2><br>
+      <div class="row text-center slideanim">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="pools.html"><img style= "border-radius: 50%;" src="images/p1.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="pools.html"><img style= "border-radius: 50%;" src="images/p2.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="pools.html"><img style= "border-radius: 50%;" src="images/p3.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+        </div>
+      </div><br>
+      <div class="carousel-caption">
+       
+       
+      </div>      
+    </div>
+    
+    <div class="item">
+      <div id="Gallery" class="container-fluid text-center bg-grey">
+        <h2 style="background-color:#2196F3; color:white;">Cottages</h2><br>
+      
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="cottages.html"><img style= "border-radius: 50%;" src="images/c1.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="cottages.html"><img style= "border-radius: 50%;" src="images/c2.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="cottages.html"><img style= "border-radius: 50%;" src="images/c3.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="carousel-caption">
+        
+        
+      </div>      
+    </div>
+  
+    <div class="item">
+      <div id="Gallery" class="container-fluid text-center bg-grey">
+        <h2 style="background-color:#2196F3; color:white;">Food & Drinks</h2><br>
+      
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="food&drinks.html"><img style= "border-radius: 50%;" src="images/f1.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="food&drinks.html"><img style= "border-radius: 50%;" src="images/f2.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <a href="food&drinks.html"><img style= "border-radius: 50%;" src="images/f3.jpg" alt="HTML tutorial" width="300" height="300"></a>
+            
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="carousel-caption">
+       
+        
+      </div>      
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control"  href="#myCarousel" role="button" data-slide="prev">
+    <span style="color:blue;" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span style="color:blue;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<hr></br></br></br>
+<div class="container-fluid text-center">
+    <h1 style="background-color:#2196F3; color:white;">Watch video</h1>
+  </div>
+<div class="container  w3-hide-small ">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://youtube.com/embed/Ik2hQBxrcZU"></iframe>
+  </div>
+</div><br><br>
+
+<div class="w3-container-fluid w3-hide-large">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://youtube.com/embed/Ik2hQBxrcZU"></iframe>
+  </div>
+</div><br><br>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h1 style="background-color:#2196F3; color:white;">Pricing</h1>
+  </div>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Cottages</h1>
+        </div>
+       
+        <div class="panel-body"><img src="images/cp1.jpg" alt="pic1" width="400" height="300" class="img-responsive center-block" />
+        </div>
+        <div class="panel-footer">
+          <h3 style="text-align:center;">Medium Kubo-<span>&#8369;</span>200</h3>
+          <h3 style="text-align:center;">Large Kubo-<span>&#8369;</span>300</h3>
+          <button style="background-color:#2196F3;" class="btn btn-lg" onclick="document.location='contact.html'">Book Now</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Entrance Fee</h1>
+         </div>
+         <div class="panel-body"><img src="images/e1.jpg" alt="pic1" width="400" height="300" class="img-responsive center-block" />
+        </div> 
+        <div class="panel-footer">
+          <h3 style="text-align:center;">Adult-<span>&#8369;</span>30</h3>
+          <h3 style="text-align:center;">Kiddie-<span>&#8369;</span>20</h3>
+          <button style="background-color:#2196F3;" class="btn btn-lg" onclick="document.location='contact.html'">Book Now</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Function Hall</h1>
+        </div>
+        <div class="panel-body"><img src="images/fu.jpg" alt="pic1" width="400" height="300" class="img-responsive center-block" />
+        </div> <BR>
+        <div class="panel-footer">
+          <h3>Soon</h3>
+          <h3>Soon</h3>
+          <button style="background-color:#2196F3;" class="btn btn-lg" onclick="document.location='contact.html'">Book Now</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+
+
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+  <h4 style="background-color:#333; font-size: 25px;">Visit our pages</h4>
+  
+  <a href="https://web.facebook.com/Carolinas-Paradise-101728322074363" target="_blank" rel="noopener" class="pr-5 rtl-flip" title="Our Facebook page"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                    <a href="https://www.instagram.com/carolinasparadise/" target="_blank" rel="noopener" title="Our Instagram page"><i class="fa fa-instagram w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                    <a href="https://twitter.com/CarolinasParad1/" target="_blank" rel="noopener" title="Our Instagram page"><i class="fa fa-twitter w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                    <a href="https://www.youtube.com/watch?v=Ik2hQBxrcZU" target="_blank" rel="noopener" title="Our Instagram page"><i class="fa fa-youtube w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                    
+  <div style="text-align:justify;" class="w3-section">
+    <p><i class="fa fa-map-marker fa-fw w3-text-blue w3-xxlarge w3-margin-right"></i>P-1 TabonTabon Sibagat Agusan del Sur</p>
+    <p><i class="fa fa-phone fa-fw w3-text-blue w3-xxlarge w3-margin-right"></i> Phone: 09101443437</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-blue w3-xxlarge w3-margin-right"> </i> Email: carolinasparadise@gmail.com</p>
+  </div><br>
+  <a href="#" class="w3-button w3-blue w3-padding-large w3-margin-bottom w3-round-large "><i class="fa fa-arrow-up "></i></a>
+  <p>=Mars Dev=</p>
+                    
+</footer>
+  
+  
+
+
+
+            
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+
+
+
+</script>
+
+
+</body>
+</html>

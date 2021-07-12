@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+body {
+  font-family: Arial;
+}
+
+.coupon {
+  border: 5px dotted #bbb;
+  width: 100%;
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 600px;
+  
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: #f1f1f1;
+}
+
+.promo {
+  background: #ccc;
+  padding: 3px;
+}
+
+.expire {
+  color: red;
+}
+</style>
+</head>
+<body id="#"> 
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-large w3-light-grey">
+      <div class="w3-dropdown-click">
+        <button class="w3-button" onclick="myFunction()">
+          More <i class="fa fa-caret-down"></i>
+        </button>
+        <div id="demo" class="w3-dropdown-content w3-bar-block w3-card">
+          <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+          <a href="pools.html" class="w3-bar-item w3-button">Pools</a>
+          <a href="cottages.html" class="w3-bar-item w3-button">Cottages</a>
+          <a href="food&drinks.html" class="w3-bar-item w3-button">Food & Drinks</a>
+          <a href="pricing.html" class="w3-bar-item w3-button">Pricing</a>
+          <a href="about.html" class="w3-bar-item w3-button">About</a>
+          <a href="contact.php" class="w3-bar-item w3-button">Contact</a>
+        </div>
+      </div>
+      <a href="index.html" class="w3-bar-item w3-button w3-round">Home</a>
+      <a href="gallery.html" class="w3-bar-item w3-button w3-round">Gallery</a>
+      <a href="about.html" class="w3-hide-small w3-bar-item w3-button w3-round">about</a>
+      <a href="contact.php" class="w3-bar-item w3-button w3-round">Contact</a>
+    </div>
+    </div>
+    <br><br>
+<div class="w3-container">
+    <div class="w3-container w3-hide-large"> 
+
+<div style=text-align:center>
+<h1>Cottages</h1>
+</div>
+<div class="row"> 
+    <div class="column" style=text-align:center>
+   
+        <div class="coupon">
+            <div class="container">
+              <h3><mark>Medium Kubo</mark></h3>
+            </div>
+            <img src="images/c3.jpg" alt="c3" style="width:100%;">
+            <div class="container" style="background-color:white">
+              
+              <p style="text-align:justify;">A type of Kubo with nepa hut,floored with bamboo and rounded bomboo chair
+                perfect for salo salo with family and friends.
+              </p>
+            </div>
+            <div class="container">
+              
+            </div>
+          </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="column" style=text-align:center>
+   
+        <div class="coupon">
+            <div class="container">
+              <h3><mark>Big Umbrellas</mark></h3>
+            </div>
+            <img src="images/c2.jpg" alt="c2" style="width:100%;">
+            <div class="container" style="background-color:white">
+             
+              <p style="text-align:justify;">Big colored umbrellas with table and chairs perfect for small to big
+                group of barkada's.
+             </p><br>
+            </div>
+            <div class="container">
+              
+            </div>
+          </div>
+    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="column" style=text-align:center>
+   
+        <div class="coupon">
+            <div class="container">
+              <h3><mark>Function hall</mark></h3>
+            </div>
+            <img src="images/c1.jpg" alt="c1" style="width:100%;">
+            <div class="container" style="background-color:white">
+            
+              <h3>soon<br><br></h3>
+            </div>
+            <div class="container">
+              
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="w3-container">
+    <div class="w3-container w3-hide-small">
+<div style=text-align:center>
+<h1>Cottages</h1>
+</div>
+<div class="row"> 
+    <div class="column" style=text-align:center>
+   
+        <div class="coupon">
+            <div class="container">
+              <h3><mark>Medium Kubo</mark></h3>
+            </div>
+            <img src="images/c3.jpg" alt="c3" style="width:100%;">
+            <div class="container" style="background-color:white">
+            
+              <p style="text-align:justify;">A type of Kubo with nepa hut,floored with bamboo and rounded bomboo chair
+                perfect for salo salo with family and friends.
+              </p>
+            </div>
+            <div class="container">
+              
+            </div>
+          </div>
+    </div>
+    <div class="column" style=text-align:center>
+        <div class="coupon">
+            <div class="container">
+              <h3><mark>Big Umbrellas</mark></h3>
+            </div>
+            <img src="images/c2.jpg" alt="c2" style="width:100%;">
+            <div class="container" style="background-color:white">
+              
+              <p style="text-align:justify;">Big colored umbrellas with table and chairs perfect for small to big
+                 group of barkada's.
+              </p><br>
+            </div>
+            <div class="container">
+              
+            </div>
+          </div>
+    </div>
+    <div class="column" style=text-align:center>
+    
+        <div class="coupon">
+            <div class="container">
+              <h3><mark>Function Hall</mark></h3>
+            </div>
+            <img src="images/c1.jpg" alt="c1" style="width:100%;">
+            <div class="container" style="background-color:white">
+              
+              <h3>soon<br><br></h3>
+            </div>
+            <div class="container">
+              
+            </div>
+          </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <h4 style=font-size:20px;>Visit our Pages</h4><br>
+<div class="col-md-24 text-center">
+                      <a href="https://web.facebook.com/Carolinas-Paradise-101728322074363" target="_blank" rel="noopener" class="pr-5 rtl-flip" title="Our Facebook page"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                      <a href="https://www.instagram.com/carolinasparadise/" target="_blank" rel="noopener" title="Our Instagram page"><i class="fa fa-instagram w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                      <a href="https://twitter.com/CarolinasParad1" target="_blank" rel="noopener" title="Our Instagram page"><i class="fa fa-twitter w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                      <a href="https://www.instagram.com/kueez.official/" target="_blank" rel="noopener" title="Our Instagram page"><i class="fa fa-youtube w3-hover-opacity" style="font-size:48px;color:#2196F3"></i></a>
+                  </div>
+              </div>
+
+    <div class="container-fluid">
+          <div class="container p-5">
+              <div class="row social pb-5">
+                <div style="text-align:justify;"class="w3-section">
+                  <p style="text-align:justify;"><i class="fa fa-map-marker fa-fw w3-text-blue w3-xxlarge w3-margin-right"></i>P-1 TabonTabon Sibagat Agusan del Sur</p>
+                   <p><i class="fa fa-phone fa-fw w3-text-blue w3-xxlarge w3-margin-right"></i> Phone: 09101443437</p>
+                   <p><i class="fa fa-envelope fa-fw w3-text-blue w3-xxlarge w3-margin-right"> </i> Email: carolinasparadise@gmail.com</p>
+                </div><br>
+                <a href="#" class="w3-button w3-blue w3-padding-large w3-margin-bottom w3-round-large "><i class="fa fa-arrow-up "></i></a>
+                  
+                <p>=Mars Dev=</p>
+  </footer>
+  
+  <script>
+    $(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+    
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+  
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  })
+    function myFunction() {
+      var x = document.getElementById("demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+    
+    
+  
+  
+  </body>
+  </html>
